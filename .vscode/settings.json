@@ -1,0 +1,31 @@
+// Place your settings in this file to overwrite default and user settings.
+// {
+// 	"files.exclude": {
+// 		"out": true,
+// 		"typings": false
+// 	},
+// 	"search.exclude": {
+// 		"**/node_modules": true,
+// 		"**/bower_components": true,
+// 		"out/": true
+// 	},
+// 	"editor.insertSpaces": false,
+// 	"typescript.tsdk": "./node_modules/typescript/lib"
+// }
+
+{
+    "go.buildOnSave": true,
+    "go.lintOnSave": true,
+    "go.vetOnSave": true,
+    "go.buildTags": "",
+    "go.buildFlags": [],
+    "go.lintFlags": [],
+    "go.vetFlags": [],
+    "go.coverOnSave": false,
+    "go.useCodeSnippetsOnFunctionSuggest": false,
+    "go.formatOnSave": true,
+    "go.formatTool": "goreturns",
+    "go.goroot": "D:/Go/",
+    "go.gopath": "D:/gopath/",
+    "go.gocodeAutoBuild": false
+}
