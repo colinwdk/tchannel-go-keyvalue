@@ -113,7 +113,7 @@ func (h *kvHandler) GetAll(ctx thrift.Context) (map[string]string, error) {
 	h.RLock()
 	defer h.RUnlock()
 
-	return keyvalue, nil
+	return h.vals, nil
 }
 
 // Set sets the value for a given key.
