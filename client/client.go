@@ -81,6 +81,7 @@ func main() {
 				break
 			}
 			get(client, parts[1])
+			getAll(client) //test get all
 		case "set":
 			if len(parts) < 3 {
 				printHelp()
@@ -121,6 +122,16 @@ func get(client keyvalue.TChanKeyValue, key string) {
 	}
 
 	log.Printf("Get %v: %v", key, val)
+}
+
+func getAll(client keyvalue.TChanKeyValue) {
+	ctx, cancel := createContext()
+	defer cancel()
+	fmt.Println("getAll")
+	//val, err := client.Get(ctx, key)
+	val, _ := client.GetAll(ctx)
+
+	log.Printf("GetAll %v", val)
 }
 
 func set(client keyvalue.TChanKeyValue, key, value string) {
